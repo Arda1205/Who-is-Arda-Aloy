@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/general.css">
+
+    
+    <link rel="icon" href="../images/index_icon.png" alt="Homepage icon">
+
+    <title>Who is Arda Aloy?</title>
+</head>
+
+<body>
+    <header>
+        <nav class="default_nav">
+            <a class="navbar" href="interests.html">Interests</a>
+            <a class="navbar" href="index.html">Home</a>
+            <a class="navbar" href="what_i_do.html">What I do</a>
+        </nav>
+
+        <button onclick="toggleMenu()"></button>
+
+        <nav id="mobile_nav" class="mobile_nav hidden">
+            <a class="navbar" href="interests.html">Interests</a>
+            <a class="navbar" href="index.html">Home</a>
+            <a class="navbar" href="what_i_do.html">What I do</a>
+        </nav>
+    </header>
+
+    <div class="content">
+        <section class="image_splash" alt="Big background image for homepage">
+            <div class="fadeIn">
+                <h3>Hi!<p>I'm Arda</p>
+                </h3>
+            </div>
+        </section>
+
+        <section class="intro hidden2">
+            <img class="photo" src="../images/photo.jpg" alt="Photo og mysef">
+
+            <div class="who">Who am I?
+                <div>
+                    <li>Video gamer</li>
+                    <li>Computer geek</li>
+                    <li>Car guy</li>
+                </div>
+                <div>
+                    <li>And maybe a web developer???</li>
+                </div>
+            </div>
+        </section>
+
+        <section class="about_myself hidden2">
+            <h2>A little about myself...</h2>
+            <p>I'm just a guy with a good sense of humor who is generally easy going. I have worked up 
+                a lot of hobbies overtime and have gained experience in these fields. My goal is to 
+                work on personal and cooperate projects in relation to multimedia in the future. My goal here
+                is to show you what kind of a person I really am and what I can bring to the table. Explore my 
+                other pages to get a view of me!
+            </p>
+            <!-- <p>Ever since I was a kid I love playing video games and working with computers, I've probably
+                spent 50% of my life on these things alone. I also have a thing for drawing comics with
+                funny humor since I enjoy making people laugh. In my website here, I will be showing you
+                a bunch of things I like doing a long with some other fun facts about me.</p> -->
+        </section>
+
+        <section class="explore hidden2">
+            <h2>You can reach out to me below with any questions!</h2>
+        </section>
+
+        <form action="" method="get" class="grid">
+
+            <label>Name </label>
+            <input type="text" name="name" required>
+    
+            <label>Email </label>
+            <input type="text" name="email">
+
+            <label>Message </label>
+            <input type="text" name="message">
+
+            <button class="contact">Submit</button>
+    
+        </form>
+
+    </div>
+
+    <script src="scripts/script.js"></script>
+    <footer>© Your mother inc. 2024 All rights RESERVED</footer>
+
+</body>
+
+</html>

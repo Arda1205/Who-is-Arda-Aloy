@@ -1,0 +1,241 @@
+.image_splash_what {
+    padding: 100px 50px 0;
+    box-sizing: border-box;
+    height: 1000px;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    grid-gap: 30px;
+    color: rgb(255, 255, 255);
+    text-shadow: 3px 3px 3px black;
+    font-weight: 600;
+    margin: auto;
+
+    /* Alt tag located in html under the section class of image_splash */
+    background-image: url('../images/placeholder.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    box-shadow: black 0 10px 40px;
+}
+
+h3 {
+    font-family: "Roboto Slab", serif;
+    font-size: 80px;
+    margin-top: 200px;
+    margin-left: 50px;
+}
+
+h2 {
+    font-size: 40px;
+    margin-top: 3em;
+    padding: 1em;
+    text-align: center;
+    font-family: "Roboto Slab", serif;
+}
+
+.skills {
+    margin-top: 10em;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    text-align: left;
+}
+
+.skills > div > li {
+    font-size: 30px;
+    line-height: 100px;
+    margin-left: 5em;
+    font-family: "Roboto Slab", serif;
+}
+
+.skills_choice {
+    text-align: center;
+    font-size: 60px;
+    margin: 1.5em;
+    line-height: 80px;
+    font-family: "Roboto Slab", serif;
+    color: rgb(189, 192, 65);
+}
+
+.description {
+    font-size: 30px;
+    font-family: "Nunito", sans-serif;
+    background: rgb(22, 22, 22);
+    border-radius: 10px;
+    padding: 30px;
+    margin-right: 50px;
+    margin-left: 100px;
+    line-height: 50px;
+}
+
+.examples {
+    background: rgb(22, 22, 22);
+    border-radius: 0px;
+    font-size: 40px;
+    margin-top: 6em;
+    text-align: center;
+    padding: 1em;
+}
+
+.conclusion {
+    font-size: 30px;
+    margin-top: 5em;
+    text-align: center;
+    padding: 2em;
+    line-height: 50px;
+}
+
+.work_grid {
+    font-size: 40px;
+    margin-top: 1em;
+    text-align: center;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto;
+    justify-items: center;
+}
+
+.work_grid > div > p {
+    margin: 1em;
+    margin-top: 5em;
+    font-family: "Roboto Slab", serif;
+}
+
+.image_properties {
+    border: 10px solid rgb(153, 166, 189);
+    border-radius: 25px;
+    width: 70%;
+}
+
+li > a { 
+    cursor: pointer; 
+}
+
+#option {
+    display: none;
+}
+
+#option2 {
+    display: none;
+}
+
+#option3 {
+    display: none;
+}
+
+#option4 {
+    display: none;
+}
+
+#option5 {
+    display: none;
+}
+
+#option6 {
+    display: none;
+}
+
+@media screen and (max-width: 1500px) {
+    .skills
+ > div > li {
+        margin-left: 2em;
+    }
+}
+
+@media screen and (max-width: 1300px) {
+    .skills
+ > div > li {
+        margin-left: 2em;
+        font-size: 25px;
+    }
+}
+
+@media screen and (max-width: 1050px) {
+    .skills
+ > div > li {
+        margin-left: 1em;
+    }
+
+    .description {
+        font-size: 20px;
+    }
+
+    .skills_choice {
+        font-size: 40px;
+    }
+
+}
+
+@media screen and (max-width: 950px) {
+
+    .skills
+ {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .skills
+ > div > li {
+        margin-left: 1.5em;
+        font-size: 20px;
+    }
+
+    .description {
+        margin-left: 25px;
+        font-size: 20px;
+        line-height: 35px;
+    }
+
+    .work_grid {
+        grid-template-columns: auto auto;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .description {
+        font-size: 15px;
+    }
+
+    .skills_choice {
+        margin: 0.5em;
+    }
+}
+
+@media screen and (max-width: 600px) {
+  
+    .skills
+ {
+        grid-template-columns: auto;
+        margin-top: 5em;
+    }
+
+    .description {
+        margin-top: 50px;
+        font-size: 20px;
+    }
+
+    .skills
+ > div > li {
+        line-height: 50px;
+    }
+
+    .work_grid {
+        grid-template-columns: auto;
+        margin-top: 0;
+    }
+
+    .conclusion {
+        font-size: 20px;
+    }
+
+    h3 {
+        margin-left: 0;
+        font-size: 45px;
+    }
+
+}
+
+
+/* .text_image {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr;
+} */

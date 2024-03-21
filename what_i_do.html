@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/general.css">
+    <link rel="stylesheet" href="styles/what_styles.css">
+
+    <link rel="icon" href="../images/what_icon.png" alt="What I do icon">
+
+    <title>Things I do</title>
+</head>
+
+<body>
+    <header>
+        <nav class="default_nav">
+            <a class="navbar" href="interests.html">Interests</a>
+            <a class="navbar" href="index.html">Home</a>
+            <a class="navbar" href="what_i_do.html">What I do</a>
+        </nav>
+
+        <button onclick="toggleMenu()"></button>
+
+        <nav id="mobile_nav" class="mobile_nav hidden">
+            <a class="navbar" href="interests.html">Interests</a>
+            <a class="navbar" href="index.html">Home</a>
+            <a class="navbar" href="what_i_do.html">What I do</a>
+        </nav>
+    </header>
+
+
+    <div class="content">
+        <section class="image_splash_what" alt="Big background image for homepage">
+            <div class="fadeIn">
+                <h3>What I do.
+                </h3>
+            </div>
+        </section>
+
+        <h2 class="hidden2">It's time we go more in depht on what I do. Click on the skill
+            to find out more about it</h2>
+
+        <section class="skills hidden2">
+            <div>
+                <li tabindex="0"><a onclick="show()" id="btnID">Graphic Designer</a></li>
+                <li tabindex="0"><a onclick="show2()" id="btnID2">Computer Technician</a></li>
+                <li tabindex="0"><a onclick="show3()" id="btnID3">Video Editor</a></li>
+                <li tabindex="0"><a onclick="show4()" id="btnID4">Web Designer</a></li>
+                <li tabindex="0"><a onclick="show5()" id="btnID5">Car Advisor</a></li>
+                <li tabindex="0"><a onclick="show6()" id="btnID6">Music Creator</a></li>
+            </div>
+
+            <div>
+                <section id="option" class="description fadeIn">
+                    <p class="skills_choice">Graphic Designer</p>
+                    <p>
+                        Wether you need desings on paper or on digital, I got you
+                        covered!
+                        I have experience with pencil on paper drawing as well as digital on a tablet using programs
+                        such as
+                        Photoshop and Krita. Although most of my illustrations may appear simple, I can convey the right
+                        emotions in the things I create therefor making my skills especially useful in storyboarding,
+                        screnplay,
+                        comic strips and character designs.
+                    </p>
+                </section>
+
+                <section id="option2" class="description fadeIn">
+                    <p class="skills_choice">Computer Technician</p>
+                    <p>
+                        I have a lot of exeperience with troubleshooting hardware and software problems on a computer.
+                        While I am more specialized in Windows, I have also worked with Apple Mac computers. From
+                        diagnosing
+                        viruses and removing them, to fixing software issues and hardware problems, I will definitely
+                        fix
+                        your problem or provide solutions to the least.
+                    </p>
+                </section>
+
+                <section id="option3" class="description fadeIn">
+                    <p class="skills_choice">Video Editor</p>
+                    <p>
+                        Starting off with Movie Maker and then moving onto VSDC, I have made a lot of projects
+                        with video editing which range from memes to professional film content. I have access to
+                        a lot of visual FX and features which allow me to make some awesome videos.
+                    </p>
+                </section>
+
+                <section id="option4" class="description fadeIn">
+                    <p class="skills_choice">Web Designer</p>
+                    <p>
+                        Like what you see? I may be a beginner at web design and coding on it's own, but I have a tendancy
+                        to learn really quickly. Every moment i'm working on this website I am contributing to my own skills
+                        to improve and go beyond my abilities. Web design involves a healthy mix of coding and designing which
+                        is very complicated if you think about it, that is why I always plan before excecuting.
+                    </p>
+                </section>
+
+                <section id="option5" class="description fadeIn">
+                    <p class="skills_choice">Car Advisor</p>
+                    <p>
+                        Cars are just so awesome as I've mentionned on my interests page. But I do indeed know enough about them
+                        and their many problems with certain brands. It's always good to do research on a vehicle before making the
+                        decision to purchase it. But with my knowledge I help others guide them to the right choices!
+                    </p>
+                </section>
+
+                <section id="option6" class="description fadeIn">
+                    <p class="skills_choice">Music Creator</p>
+                    <p>
+                        The amount of music keyboards and other devices I own is crazy. I sucessfully created one song so far which
+                        may not seem like much but I do plan on creating some more music. I tend to go for a techno genre as
+                        that's the sort of music I enjoy. I can also work with other music genres as well.
+                    </p>
+                </section>
+            </div>
+        </section>
+
+        <p class="examples hidden2">Here is some examples of my work for you to see.</p>
+
+        <section class="work_grid">
+            <div class="hidden2">
+                <p>Book Cover Design</p>
+                <img class="image_properties" src="../images/book_photo.jpg" alt="Book cover design">
+            </div>
+            <div class="hidden2">
+                <p>Typography</p>
+                <img class="image_properties" src="../images/typo_photo.png" alt="Typography design">
+            </div>
+            <div class="hidden2">
+                <p>Movie Poster</p>
+                <img class="image_properties" src="../images/poster_photo.jpg" alt="Movie poster design">
+            </div>
+
+            <div class="hidden2">
+                <p>3D Modeling</p>
+                <img class="image_properties" src="../images/robot_photo.png" alt="3D Model of a robot">
+            </div>
+            <div class="hidden2">
+                <p>Traditional Art</p>
+                <img class="image_properties" src="../images/drawing_photo.jpg" alt="Traditional drawing">
+            </div>
+            <div class="hidden2">
+                <p>Graphic Novel Poster</p>
+                <img class="image_properties" src="../images/cover_photo.png" alt="Graphic novel poster design">
+            </div>
+
+        </section>
+
+
+
+        <section class="conclusion hidden2">
+            <p>Hard work pays off, and with all of my experience in a variatey of categories, I can be a suitable
+                candidate for many jobs in the future that involve any of my mentionned skills.
+                I have worked hard in these fields and I am still improving every day!
+                Now that you've seen my work, you may or may not be interested in getting in touch with me. If so, there
+                is a
+                contact form in the homepage in which you can fill out and send to me.
+            </p>
+        </section>
+
+        <!-- <div>
+            <h1>GeeksforGeeks</h1>
+            <p>Click on the button to see image</p>
+        </div>
+
+        <section class="text_image">
+                <a onclick="show()" id="btnID">Show Image</a>
+                <a onclick="show2()" id="btnID">Show Image</a>
+
+                <img id="image" src="https://media.geeksforgeeks.org/wp-content/uploads/20210915115837/gfg3.png" alt="GFG image">
+                <img id="image2" src="images/facts_photo.jpg" alt="GFG image">
+        </section>  -->
+
+
+
+    </div>
+
+    <script src="scripts/script_what.js"></script>
+    <footer>© Your mother inc. 2024 All rights RESERVED</footer>
+
+</body>
+
+</html>

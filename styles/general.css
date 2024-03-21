@@ -1,0 +1,420 @@
+* {
+    box-sizing: border-box;
+
+    padding: 0;
+    margin: 0;
+}
+
+.content {
+    color: rgb(255, 255, 255);
+    margin: 0 auto;
+}
+
+body {
+    color: rgb(255, 255, 255);
+    background: rgb(38, 38, 38);
+    font-family: "Nunito", sans-serif;
+    /* font-weight: 205; */
+
+    /* cursor: url('http://wiki-devel.sugarlabs.org/images/e/e2/Arrow.cur'), pointer; */
+
+}
+
+header {
+    /* background: white; */
+    background-color: rgb(19, 19, 19);
+    padding: 10px;
+    /* border-bottom: 4px solid #ddd; */
+
+    display: grid;
+    grid-template-columns: auto 1fr;
+
+    position: fixed;
+    width: 100%;
+    box-sizing: border-box;
+    font-family: "Roboto Slab", serif;
+
+    min-height: 50px;
+
+    z-index: 10;
+
+    box-shadow: black 0 10px 40px;
+}
+
+*::-webkit-scrollbar {
+    display: none;
+}
+
+footer {
+    text-align: center;
+    padding: 40px;
+    margin-top: 50px;
+
+    background: rgb(22, 22, 22);
+    border-radius: 0px;
+}
+
+/* Big text on image splash */
+h3 {
+    font-family: "Roboto Slab", serif;
+    font-size: 90px;
+    margin-top: 230px;
+    margin-left: 50px;
+}
+
+/* Big image on homepage */
+.image_splash {
+    padding: 100px 50px 0;
+    box-sizing: border-box;
+    height: 1000px;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    grid-gap: 30px;
+    color: rgb(255, 255, 255);
+    text-shadow: 3px 3px 3px black;
+    font-weight: 600;
+    /* margin: auto; */
+
+    /* Alt tag located in html under the section class of image_splash */
+    background-image: url('../images/main_bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    box-shadow: black 0 10px 40px;
+}
+
+/* Talking about who I am */
+.intro {
+    display: grid;
+    margin-top: 200px;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 50px;
+}
+
+/* Photo of who I am */
+.photo {
+    margin: auto;
+    border-radius: 25px;
+    width: 50%;
+    border: 10px solid rgb(153, 166, 189);
+}
+
+/* Description of who I am */
+.who {
+    font-size: 80px;
+    font-family: "Roboto Slab", serif;
+    margin-top: 50px;
+    margin-right: 50px;
+}
+
+.who > div {
+    font-size: 30px;
+    /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+    margin-top: 50px;
+    margin-left: 50px;
+    line-height: 2.0;
+}
+
+.about_myself {
+    /* margin: 50px; */
+    padding: 50px;
+    margin-top: 250px;
+
+    background: rgb(22, 22, 22);
+    border-radius: 0px;
+}
+
+.about_myself > h2 {
+    font-size: 45px;
+    font-family: "Roboto Slab", serif;
+}
+
+.about_myself > p {
+    font-size: 25px;
+    /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+    margin-top: 50px;
+    line-height: 40px;
+}
+
+.explore {
+    font-size: 40px;
+    margin-top: 200px;
+    text-align: center;
+    font-family: "Roboto Slab", serif;
+}
+
+section {
+    margin: 0;
+    min-height: 15vh;
+}
+
+/* Second hidden for the text glide in */
+.hidden2 {
+    opacity: 0;
+}
+
+/* Fade in and out gets used by the script to take effect */
+.fadeIn {
+    animation: fadeIn 0.75s;
+    opacity: 1;
+}
+
+.fadeOut {
+    animation: fadeOut 0.75s;
+    opacity: 0;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateX(-500px)
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+        transform: translateX(-500px)
+    }
+}
+
+/* Bottom contact styles */
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 500px;
+    max-width: 600px;
+    margin: 0 auto;
+    justify-content: center;
+    grid-gap: 20px;
+    align-items: center;
+}
+
+.contact {
+    display: block;
+    grid-column: span 2;
+    max-width: 400px;
+    margin: 0;
+    background: white;
+    border: 20px solid var(--light);
+    border-radius: 10px;
+
+    font-weight: bold;
+    transition: all 0.25s;
+}
+
+.contact:hover {
+    cursor: pointer;
+    transform: translateY(-5px);
+}
+
+.default_nav {
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    position: fixed;
+    /* top: 0; */
+    background-color: rgb(19, 19, 19);
+    font-size: 30px;
+    display: grid;
+    grid-gap: 100px;
+    grid-template-columns: 240px 240px 240px;
+    grid-auto-flow: column;
+    justify-content: center;
+    z-index: 2;
+    box-shadow: black 0 10px 40px;
+
+    font-family: "Roboto Slab", serif;
+}
+
+/* Link styles */
+.navbar {
+    display: block;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-weight: bold;
+
+    /* Fancy effect with transitions */
+    transition: color 0.15s, border 0.15s;
+}
+
+/* Visited link color */
+a:visited {
+    color: rgb(154, 208, 224);
+}
+
+/* Hovering mouse over the link changes color of text and border. */
+a:hover {
+
+    color: rgb(189, 192, 65);
+}
+
+/* Allows tab to focus to it */
+a:focus {
+    border: 1cm;
+}
+
+img {
+    max-width: 100%;
+}
+
+/* Button to show the nav in movile */
+button {
+    display: none;
+    background-color: rgb(38, 38, 38);
+    background-image: url('../images/link_button.png');
+    background-size: contain;
+    border: none;
+    height: 40px;
+    width: 50px;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+.mobile_nav {
+    animation: appear 1s;
+    font-size: 30px;
+    display: none;
+    width: 100%;
+    padding: 20px;
+}
+
+.hidden {
+    display: none;
+}
+
+.mobile_nav a {
+    display: block;
+    /* background: #ccc; */
+    /* padding: 10px; */
+    margin-bottom: 10px;
+}
+
+@keyframes appear {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+
+/* Overwriting previous code for smaller window */
+@media screen and (max-width: 950px) {
+    header {
+        grid-template-columns: 1fr;
+        justify-items: right;
+    }
+
+    button {
+        display: block;
+    }
+
+    .default_nav {
+        display: none;
+    }
+
+    .mobile_nav {
+        display: block;
+    }
+
+    .mobile_nav.hidden {
+        display: none;
+    }
+
+    .intro {
+        grid-template-columns: auto;
+    }
+
+    .who {
+        text-align: center;
+    }
+
+    .about_myself {
+        text-align: center;
+    }
+
+    .images {
+        grid-template-columns: 1fr;
+    }
+
+    .image_properties {
+        width: 60%;
+        position: center
+    }
+
+    .photo {
+        align-self: center;
+        width: 60%;
+    }
+
+    .grid {
+        max-width: 400px;
+        margin-top: 100px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+
+    .image_splash {
+        font-size: 40px;
+    }
+
+    .about_myself {
+        margin-top: 150px;
+    }
+
+    .about_myself>p {
+        font-size: 20px;
+    }
+
+    .about_myself>h2 {
+        font-size: 30px;
+    }
+
+    .explore {
+        margin-top: 100px;
+    }
+
+    .who {
+        font-size: 60px;
+        text-align: center;
+        margin: auto;
+        margin-top: 50px;
+    }
+
+    .who>div {
+        margin: auto;
+        margin-top: 50px;
+    }
+
+    .photo {
+        align-self: center;
+        width: 70%;
+    }
+
+    h3 {
+        font-size: 45px;
+        margin-left: 0px;
+    }
+
+    .grid {
+        max-width: 100px;
+        grid-template-columns: 1fr 200px;
+    }
+
+    .image_splash {
+        background-position: -500px;
+    }
+}
