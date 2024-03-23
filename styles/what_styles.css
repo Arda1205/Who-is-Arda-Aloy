@@ -11,7 +11,7 @@
     margin: auto;
 
     /* Alt tag located in html under the section class of image_splash */
-    background-image: url('../images/placeholder.jpg');
+    background-image: url('../images/wood_bg.png');
     background-repeat: no-repeat;
     background-size: cover;
 
@@ -215,6 +215,7 @@ li > a {
     .skills
  > div > li {
         line-height: 50px;
+        margin-left: 3em;
     }
 
     .work_grid {

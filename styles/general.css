@@ -23,7 +23,7 @@ body {
 header {
     /* background: white; */
     background-color: rgb(19, 19, 19);
-    padding: 10px;
+    /* padding: 10px; */
     /* border-bottom: 4px solid #ddd; */
 
     display: grid;
@@ -315,6 +315,7 @@ button:hover {
     header {
         grid-template-columns: 1fr;
         justify-items: right;
+        padding: 10px;
     }
 
     button {
