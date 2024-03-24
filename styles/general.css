@@ -378,10 +378,11 @@ button:hover {
 
     .about_myself>p {
         font-size: 20px;
+        line-height: 30pxs;
     }
 
     .about_myself>h2 {
-        font-size: 30px;
+        font-size: 35px;
     }
 
     .explore {
@@ -389,15 +390,16 @@ button:hover {
     }
 
     .who {
-        font-size: 60px;
+        font-size: 50px;
         text-align: center;
         margin: auto;
-        margin-top: 50px;
+        margin-top: 55px;
     }
 
     .who>div {
         margin: auto;
         margin-top: 50px;
+        font-size: 25px;
     }
 
     .photo {
@@ -417,5 +419,9 @@ button:hover {
 
     .image_splash {
         background-position: -500px;
+    }
+
+    .explore {
+        padding: 1em;
     }
 }

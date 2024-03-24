@@ -40,7 +40,7 @@ h2 {
     text-align: left;
 }
 
-.skills > div > li {
+.skills>div>li {
     font-size: 30px;
     line-height: 100px;
     margin-left: 5em;
@@ -94,7 +94,7 @@ h2 {
     justify-items: center;
 }
 
-.work_grid > div > p {
+.work_grid>div>p {
     margin: 1em;
     margin-top: 5em;
     font-family: "Roboto Slab", serif;
@@ -106,8 +106,8 @@ h2 {
     width: 70%;
 }
 
-li > a { 
-    cursor: pointer; 
+li>a {
+    cursor: pointer;
 }
 
 #option {
@@ -135,23 +135,20 @@ li > a {
 }
 
 @media screen and (max-width: 1500px) {
-    .skills
- > div > li {
+    .skills>div>li {
         margin-left: 2em;
     }
 }
 
 @media screen and (max-width: 1300px) {
-    .skills
- > div > li {
+    .skills>div>li {
         margin-left: 2em;
         font-size: 25px;
     }
 }
 
 @media screen and (max-width: 1050px) {
-    .skills
- > div > li {
+    .skills>div>li {
         margin-left: 1em;
     }
 
@@ -167,13 +164,11 @@ li > a {
 
 @media screen and (max-width: 950px) {
 
-    .skills
- {
+    .skills {
         grid-template-columns: 1fr 1fr;
     }
 
-    .skills
- > div > li {
+    .skills>div>li {
         margin-left: 1.5em;
         font-size: 20px;
     }
@@ -200,20 +195,22 @@ li > a {
 }
 
 @media screen and (max-width: 600px) {
-  
-    .skills
- {
+
+    .skills {
         grid-template-columns: auto;
         margin-top: 5em;
     }
 
-    .description {
-        margin-top: 50px;
-        font-size: 20px;
+    .skills_choice {
+        line-height: 50px;
     }
 
-    .skills
- > div > li {
+    .description {
+        margin-top: 50px;
+        font-size: 15px;
+    }
+
+    .skills>div>li {
         line-height: 50px;
         margin-left: 3em;
     }
@@ -224,7 +221,8 @@ li > a {
     }
 
     .conclusion {
-        font-size: 20px;
+        font-size: 15px;
+        line-height: 35px;
     }
 
     h3 {
