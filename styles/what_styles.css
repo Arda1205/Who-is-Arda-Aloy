@@ -106,7 +106,6 @@ h2 {
 }
 
 .image_properties {
-    /* border: 10px solid rgb(153, 166, 189); */
     border-radius: 0.5em;
     width: 70%;
 }
@@ -245,10 +244,3 @@ li>a {
     }
 
 }
-
-
-/* .text_image {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    grid-template-rows: 1fr;
-} */

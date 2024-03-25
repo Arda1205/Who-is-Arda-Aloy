@@ -44,13 +44,9 @@ h3 {
     margin-right: 100px;
     line-height: 40px;
     font-size: 25px;
-    /* background: rgb(22, 22, 22);
-    border-radius: 5px; */
-    /* padding: 50px; */
 }
 
 .image_like {
-    /* border: 0.5em solid rgb(153, 166, 189); */
     border-radius: 1em;
 }
 
@@ -74,7 +70,6 @@ h2 {
     font-size: 25px;
     line-height: 40px;
     margin-bottom: 200px;
-
     background: rgb(22, 22, 22);
     border-radius: 0px;
 }

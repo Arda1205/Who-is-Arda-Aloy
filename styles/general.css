@@ -14,30 +14,18 @@ body {
     color: rgb(255, 255, 255);
     background: rgb(38, 38, 38);
     font-family: "Nunito", sans-serif;
-    /* font-weight: 205; */
-
-    /* cursor: url('http://wiki-devel.sugarlabs.org/images/e/e2/Arrow.cur'), pointer; */
-
 }
 
 header {
-    /* background: white; */
     background-color: rgb(19, 19, 19);
-    /* padding: 10px; */
-    /* border-bottom: 4px solid #ddd; */
-
     display: grid;
     grid-template-columns: auto 1fr;
-
     position: fixed;
     width: 100%;
     box-sizing: border-box;
     font-family: "Roboto Slab", serif;
-
     min-height: 50px;
-
     z-index: 10;
-
     box-shadow: black 0 10px 40px;
 }
 
@@ -108,7 +96,6 @@ h3 {
 
 .who>div {
     font-size: 30px;
-    /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
     margin-top: 50px;
     margin-left: 50px;
     line-height: 2.0;
@@ -131,7 +118,6 @@ h3 {
 
 .about_myself>p {
     font-size: 25px;
-    /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
     margin-top: 50px;
     line-height: 40px;
 }
@@ -295,8 +281,6 @@ button:hover {
 
 .mobile_nav a {
     display: block;
-    /* background: #ccc; */
-    /* padding: 10px; */
     margin-bottom: 10px;
 }
 
@@ -309,7 +293,6 @@ button:hover {
         opacity: 1;
     }
 }
-
 
 /* Overwriting previous code for smaller window */
 @media screen and (max-width: 950px) {
@@ -381,7 +364,7 @@ button:hover {
 
     .about_myself>p {
         font-size: 20px;
-        line-height: 30pxs;
+        line-height: 30px;
     }
 
     .about_myself>h2 {
