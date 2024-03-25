@@ -36,7 +36,7 @@ h2 {
 .skills {
     margin-top: 10em;
     display: grid;
-    grid-template-columns: auto 2fr;
+    grid-template-columns: 1fr 2fr;
     text-align: left;
 }
 
@@ -176,6 +176,10 @@ li>a {
     .skills>div>li {
         margin-left: 1.5em;
         font-size: 20px;
+    }
+
+    .skills_choice {
+        font-size: 30px;
     }
 
     .description {
