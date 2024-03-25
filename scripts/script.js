@@ -4,7 +4,6 @@ function toggleMenu() {
     mobileNav.classList.toggle('hidden')
 }
 
-
 // Apply animation to the section text when you scroll down to it
 window.addEventListener('scroll', function () {
     let scrollTop = document.documentElement.scrollTop

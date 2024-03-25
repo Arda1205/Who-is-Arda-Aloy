@@ -28,8 +28,6 @@ window.addEventListener('scroll', function () {
 })
 
 function show() {
-    /* Access option by id and change 
-    the display property to block*/
     document.getElementById('option')
         .style.display = "block";
 
@@ -46,8 +44,6 @@ function show() {
 }
 
 function show2() {
-    /* Access option by id and change 
-    the display property to block*/
     document.getElementById('option2')
         .style.display = "block";
 
@@ -64,8 +60,6 @@ function show2() {
 }
 
 function show3() {
-    /* Access option by id and change 
-    the display property to block*/
     document.getElementById('option3')
         .style.display = "block";
 
@@ -82,8 +76,6 @@ function show3() {
 }
 
 function show4() {
-    /* Access option by id and change 
-    the display property to block*/
     document.getElementById('option4')
         .style.display = "block";
 
@@ -100,8 +92,6 @@ function show4() {
 }
 
 function show5() {
-    /* Access option by id and change 
-    the display property to block*/
     document.getElementById('option5')
         .style.display = "block";
     
@@ -118,8 +108,6 @@ function show5() {
 }
 
 function show6() {
-    /* Access option by id and change 
-    the display property to block*/
     document.getElementById('option6')
         .style.display = "block";
 

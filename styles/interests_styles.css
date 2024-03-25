@@ -6,7 +6,6 @@
     grid-template-columns: 1fr auto;
     grid-gap: 30px;
     color: rgb(255, 255, 255);
-    text-shadow: 3px 3px 3px black;
     font-weight: 600;
     /* margin: auto; */
 
@@ -25,6 +24,7 @@ h3 {
     margin-left: 50px;
 }
 
+/* Grid for things I like */
 .like_two {
     margin-top: 250px;
     margin-left: 50px;
@@ -41,7 +41,7 @@ h3 {
 
 .like_text {
     margin-top: 100px;
-    /* margin-right: 100px; */
+    margin-right: 100px;
     line-height: 40px;
     font-size: 25px;
     /* background: rgb(22, 22, 22);
@@ -54,6 +54,7 @@ h3 {
     border-radius: 1em;
 }
 
+/* Image allignment for stuff I like */
 .allign {
     width: 80%;
     display: grid;
@@ -67,6 +68,7 @@ h2 {
     font-family: "Roboto Slab", serif;
 }
 
+/* Concluding text */
 .end {
     padding: 2em;
     font-size: 25px;
@@ -110,11 +112,12 @@ h2 {
 
     .like_title {
         text-align: center;
-        margin-top: 25px;
+        margin-top: 50px;
     }
 
     .like_text {
-        margin-top: 20px;
+        margin-top: 50px;
+        margin-right: 0px;
     }
 
     .allign {
@@ -128,7 +131,7 @@ h2 {
 }
 
 @media screen and (max-width: 500px) {
-  
+
     h3 {
         margin-left: 0;
         font-size: 50px;
@@ -142,9 +145,14 @@ h2 {
         font-size: 20px;
         padding: 20px;
         line-height: 30px;
+        margin-top: 25px;
     }
 
     .image_splash_interest {
         background-position: -600px;
+    }
+
+    .end {
+        font-size: 20px;
     }
 }

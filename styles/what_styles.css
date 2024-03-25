@@ -6,7 +6,6 @@
     grid-template-columns: 1fr auto;
     grid-gap: 30px;
     color: rgb(255, 255, 255);
-    text-shadow: 3px 3px 3px black;
     font-weight: 600;
     margin: auto;
 
@@ -33,10 +32,11 @@ h2 {
     font-family: "Roboto Slab", serif;
 }
 
+/* Skills to read about */
 .skills {
     margin-top: 10em;
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: auto 2fr;
     text-align: left;
 }
 
@@ -47,6 +47,7 @@ h2 {
     font-family: "Roboto Slab", serif;
 }
 
+/* Name of the chosen skill on the card */
 .skills_choice {
     text-align: center;
     font-size: 60px;
@@ -56,6 +57,7 @@ h2 {
     color: rgb(189, 192, 65);
 }
 
+/* Description of the skill */
 .description {
     font-size: 30px;
     font-family: "Nunito", sans-serif;
@@ -67,6 +69,7 @@ h2 {
     line-height: 50px;
 }
 
+/* Examples of work to see */
 .examples {
     background: rgb(22, 22, 22);
     border-radius: 0px;
@@ -76,6 +79,7 @@ h2 {
     padding: 1em;
 }
 
+/* Concluding text */
 .conclusion {
     font-size: 30px;
     margin-top: 5em;
@@ -84,6 +88,7 @@ h2 {
     line-height: 50px;
 }
 
+/* Grid for the work showcase */
 .work_grid {
     font-size: 40px;
     margin-top: 1em;
@@ -101,8 +106,8 @@ h2 {
 }
 
 .image_properties {
-    border: 10px solid rgb(153, 166, 189);
-    border-radius: 25px;
+    /* border: 10px solid rgb(153, 166, 189); */
+    border-radius: 0.5em;
     width: 70%;
 }
 
@@ -165,7 +170,7 @@ li>a {
 @media screen and (max-width: 950px) {
 
     .skills {
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: auto 1fr;
     }
 
     .skills>div>li {
@@ -174,9 +179,13 @@ li>a {
     }
 
     .description {
-        margin-left: 25px;
+        margin-left: 20px;
         font-size: 20px;
         line-height: 35px;
+    }
+
+    .conclusion {
+        font-size: 25px;
     }
 
     .work_grid {
@@ -208,6 +217,7 @@ li>a {
     .description {
         margin-top: 50px;
         font-size: 15px;
+        margin: 50px;
     }
 
     .skills>div>li {
@@ -221,7 +231,7 @@ li>a {
     }
 
     .conclusion {
-        font-size: 15px;
+        font-size: 20px;
         line-height: 35px;
     }
 

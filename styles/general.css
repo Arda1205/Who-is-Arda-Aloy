@@ -71,7 +71,6 @@ h3 {
     grid-template-columns: 1fr auto;
     grid-gap: 30px;
     color: rgb(255, 255, 255);
-    text-shadow: 3px 3px 3px black;
     font-weight: 600;
     /* margin: auto; */
 
@@ -107,7 +106,7 @@ h3 {
     margin-right: 50px;
 }
 
-.who > div {
+.who>div {
     font-size: 30px;
     /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
     margin-top: 50px;
@@ -115,6 +114,7 @@ h3 {
     line-height: 2.0;
 }
 
+/* Short desc. of myself */
 .about_myself {
     /* margin: 50px; */
     padding: 50px;
@@ -124,18 +124,19 @@ h3 {
     border-radius: 0px;
 }
 
-.about_myself > h2 {
+.about_myself>h2 {
     font-size: 45px;
     font-family: "Roboto Slab", serif;
 }
 
-.about_myself > p {
+.about_myself>p {
     font-size: 25px;
     /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
     margin-top: 50px;
     line-height: 40px;
 }
 
+/* Reach out for questions in form */
 .explore {
     font-size: 40px;
     margin-top: 200px;
